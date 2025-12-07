@@ -55,6 +55,6 @@ The following items I plan to fix, improve, and/or add to this project in the fu
 
 * [ ] Generate physically accurate moon-orbits
 * [ ] Improve superclass-subclass relationships (reduce copy-pasting of methods, etc.)
-* Implement asteroid orbit physics
-* Develop user-interface for simplified control of software
-* Add additional orbit scenarios for user to simulate (three-body simulation, binary star system, etc.)
+* [ ] Implement asteroid orbit physics
+* [ ] Develop user-interface for simplified control of software
+* [ ] Add additional orbit scenarios for user to simulate (three-body simulation, binary star system, etc.)
