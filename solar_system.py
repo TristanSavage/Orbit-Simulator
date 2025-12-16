@@ -189,14 +189,14 @@ class SolarSystem():
                     line_dict[moon] = moon_dot                       # Add moon artist to line dictionary
 
                     ## TEMPORARY HARD-CODE FIX FOR BROKEN MOON PHYSICS
-                    planet.moon_orbit_quick_fix(moon_key, orbits=12) # Hard-code circular moon path around host-planet
+                    planet.moon_orbit_quick_fix(moon_key, num_of_orbits=12) # Hard-code circular moon path around host-planet
 
 
         print(f"Maximum orbit radius in Solar System: {max_distance} AUs")
 
         for planet in self.planets_dict.keys(): # Obtain path list length via arbitrary planet's list
             frames = int(self.planets_dict[planet].get_list_length()/speed) # Set number of animation frames to number of position steps in path lists for all physics bodies
-            print(f"Total frames of animation: {frames}")
+            print(f"Number of frames of animation: {frames}")
             break   # Break after one iteration
 
         # Set figure boundaries according to maximum orbit radius within SS
@@ -236,7 +236,7 @@ class SolarSystem():
                             line_dict[moon].set_data(m_x,m_y)    # Update artist data for this moon's position (dot)
 
 
-            ax.set_title(f"Frame {frame}")  # Set title of figure using current frame's number
+            ax.set_title(f"Frame {int(frame/speed)}")  # Set title of figure using current frame's number
             return
 
         # Use FuncAnimation to animate orbits

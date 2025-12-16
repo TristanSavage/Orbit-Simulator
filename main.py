@@ -36,11 +36,13 @@ planets = {
 # HERE: moons dictionary : (mass, this moon's name, host planet)
 moons = {
     "Earth_1" : (Moon_mass,"Moon","Earth"),
-    "Merc_1" : (Moon_mass,"Moon","Mercury"),
-    "Venus_1" : (Moon_mass,"Moon","Venus"),
-    "Mars_1" : (Moon_mass,"Moon","Mars"),
-    "Jup_1" : (Moon_mass,"Moon","Jupiter"),
-    # "Sat_1" : (Moon_mass,"Titan","Saturn"),
+
+    # "Mars_1" : (Moon_mass,"Phobos","Mars"),
+    "Jup_1"  : (Moon_mass,"Ganymede","Jupiter"),
+    # "Sat_1"  : (Moon_mass,"Titan","Saturn"),
+    # "Ur_1"   : (Moon_mass,"Titania","Uranus"),
+    # "Nep_1"   : (Moon_mass,"Triton","Neptune"),
+    # "Plu_1"   : (Moon_mass,"Charon","Pluto"),
 }
 
 ## Initialize and run Orbit Simulation
@@ -58,4 +60,4 @@ for key in moons.keys():            # Add planetary moons to SS
 
 SS.info()                               # Display Solar System info (stars, planets, moons, etc.)
 SS.pass_time(1, 0.0001)                 # Pass time in Earth years, and select delta t
-SS.run_animation(speed=50,interval=20)  # Run animation of orbits
+SS.run_animation(speed=100,interval=20)  # Run animation of orbits
