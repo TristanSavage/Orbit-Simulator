@@ -1,6 +1,6 @@
 # Solar System Orbit Simulator
 
-This software allows the generation of a virtual solar system (SS) containing any desired amount of celestial physics bodies representing stars and planets. Currently, it enables one moon per planet. The software stores position and velocity data of the SS's constituent bodies and performs force calculations to approximate the influence of gravity on each body. Body-states are updated via numerical calculations (Euler-Cromer method). This facilitates the generation of accurate orbital paths, which the software then animates over time for the user's view.
+This software facilitates the generation of a virtual solar system (SS) containing any desired amount of celestial physics bodies representing stars and planets. Currently, it enables one moon per planet. The software stores position and velocity data of the SS's constituent bodies and performs force calculations to approximate the influence of gravity on each body. Body-states are updated via numerical calculations (Euler-Cromer method). This facilitates the generation of accurate orbital paths, which the software then animates over time for the user's view.
 
 
 ## Instructions for Build and Use
